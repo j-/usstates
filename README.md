@@ -30,7 +30,7 @@ $ usstates ohio | grep ^ma | less
 
 ### State names with spaces
 
-Spaces will be stripped from state names automatically. The folling commands are equivalent:
+Spaces will be stripped from state names automatically. The following commands are equivalent:
 
 ```sh
 $ usstates 'new york'
@@ -40,7 +40,7 @@ $ usstates newyork
 
 ### Case
 
-`usstates` is case insensitive. The folling commands are equivalent:
+`usstates` is case insensitive. The following commands are equivalent:
 
 ```sh
 $ usstates new york
