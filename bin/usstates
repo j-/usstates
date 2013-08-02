@@ -2,4 +2,10 @@
 var node = process.argv[0];
 var path = require('path').resolve(__dirname, '../');
 process.argv.splice(0, 2, path);
-require('child_process').spawn(node, process.argv, { stdio: [0, 1, 2] });
+require('child_process')
+	.spawn(node, process.argv, { stdio: 'inherit' })
+	.on('exit', function (code, signal) {
+		if (code !== null) process.exit(code);
+		else if (signal !== null) process.kill(signal);
+		else process.exit();
+	});
