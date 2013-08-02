@@ -1,0 +1,22 @@
+{
+	"name": "usstates",
+	"version": "0.0.1",
+	"description": "Find words which have no letters in common with a US state",
+	"author": {
+		"name": "Jamie Hoeks",
+		"email": "j@skeoh.com"
+	},
+	"main": "./index.js",
+	"dependencies": {
+		"commander": "~2.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/j-/usstates"
+	},
+	"bin": {
+		"usstates": "./bin/usstates"
+	},
+	"preferGlobal": true,
+	"license": "MIT"
+}

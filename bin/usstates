@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+var node = process.argv[0];
+var path = require('path').resolve(__dirname, '../');
+process.argv.splice(0, 2, path);
+require('child_process').spawn(node, process.argv, { stdio: [0, 1, 2] });
