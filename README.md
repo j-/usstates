@@ -16,9 +16,9 @@ $ npm install -g usstates
 
 ```sh
 $ usstates ohio
->> abasement
->> abatement
->> abbeys
+abasement
+abatement
+abbeys
 ...
 ```
 
